@@ -276,6 +276,16 @@
   .project-card--empty h3 { color: var(--text-muted); }
   .project-card--empty a { color: var(--accent); text-decoration: underline; }
 
+  .project-links { display: flex; gap: 1rem; margin-top: 0.9rem; }
+  .project-links a {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent-strong);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .project-links a:hover { color: var(--accent); border-color: var(--accent); }
+
   /* ---------- Skills ---------- */
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.6rem 2rem; }
   .skill-group .skill-label {
@@ -457,6 +467,19 @@ java · typescript · python · angular · spring-boot · docker<span class="cur
           <ul class="tags">
             <li>Python</li><li>TypeScript</li><li>Docker</li><li>Vercel</li>
           </ul>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag-line">Proyecto personal · 2026</p>
+          <h3>Tablero de tareas</h3>
+          <p>Kanban con arrastrar y soltar entre columnas (Pendiente, En curso, Hecho), hecho en TypeScript sin frameworks, con guardado automático en el navegador.</p>
+          <ul class="tags">
+            <li>TypeScript</li><li>HTML5 Drag &amp; Drop</li><li>CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://meryzz.github.io/tablero-de-tareas/" target="_blank" rel="noopener">Ver demo →</a>
+            <a href="https://github.com/MeryZz/tablero-de-tareas" target="_blank" rel="noopener">Código</a>
+          </div>
         </article>
 
         <article class="project-card project-card--empty">
